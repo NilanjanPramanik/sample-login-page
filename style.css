@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&family=Roboto+Condensed:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Poppins', sans-serif;
+    height: 100vh;
+    /* background-color: rgb(255, 251, 243); */
+    background: linear-gradient(45deg, rgb(42, 34, 255), rgb(223, 64, 255));
+
+    
+}
+
+.subtitle{
+    color: rgb(105, 105, 105);
+}
+
+.login-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    width: fit-content;
+    padding: 30px ;
+    border-radius: 20px;
+    /* margin-top: 50px; */
+    box-shadow: 10px 10px 50px -30px black;
+    background: white;
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+}
+
+.form-item{
+    /* background-color: blueviolet; */
+    padding: 10px 0 0 0;
+
+}
+
+.form-element{
+    width: 300px;
+    height: 45px;
+    border-radius:100px ;
+    border-width: 0;   
+    padding-left: 10px;
+    background-color: rgb(222, 222, 222);
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(190, 149, 37); */
+    margin: 10px 0 0 0;
+
+}
+
+.btn{
+    color: white;
+    height: 45px;
+    width: 100px;
+    border-radius: 50px;
+    border-width: 0px;
+    cursor: pointer;
+    background-color: blue;
+    transition: transform .2s;
+}
+
+.btn:hover{
+    transform: scale(.9);
+}
+
+.social-header{
+    margin: 20px 0 10px 0;
+    color: rgb(77, 77, 77);
+    font-weight: 400;
+}
+
+.social-button{
+    /* background-color: green; */
+    display: flex;
+    gap: 20px;
+}
+.social-button a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 35px;
+    color: white;
+    transition: transform .2s;
+    
+}
+.facebook{
+    background-color: #3b5998;
+}
+.linkedin{
+    background-color: #0a66c2 ;
+}
+.github{
+    background-color: #171515;
+}
+.social-button a:hover{
+    transform: scale(.9);
+}
+
+.column-right{
+    
+    /* background-color: pink; */
+    gap: 25px;
+    /* padding: 50px 0 50px 70px; */
+    height: 300px;
+    background: url('bg-right.png') center ;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.column-right a{
+    text-decoration: none;
+    transition: transform .2s;
+
+}
+.column-right a:hover{
+    transform: scale(1.09);
+    color: white;
+    background-color: blue;
+}
+
+.column-text{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-text h2{
+    color: rgb(0, 0, 0);
+    /* text-shadow: 1px 1px 2px black, 0 0 50px rgb(187, 187, 187); */
+    margin-bottom: 30px;
+}
+.column-text p{
+    color: rgb(68, 68, 68);
+    /* text-shadow: 1px 1px 2px blue, 0 0 50px rgb(255, 255, 255); */
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);
+}
+
+.column-text a{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border: 3px solid blue;
+    /* background-color: blue; */
+    margin-top: 40px;
+    border-radius: 100px;
+    padding: 8px 20px;
+    background-color: white;
+    
+}
+@media (max-width: 960px) {
+    .login-card{
+        flex-direction: column-reverse;
+        margin: 30px 0 30px 0;
+        scroll-behavior: smooth;
+    }
+}
+@media (max-width: 450px) {
+    body{
+        background:  white;
+        display: inline-block;
+    }
+    .column-right{
+        display: none;
+    }
+    .login-card{
+        display: flex;
+        justify-content: center;
+        padding-left: 13px;
+        border-radius: 0px;
+        margin-top: 0;
+    }
+    .column-left{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
